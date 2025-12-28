@@ -1,3 +1,4 @@
+// ۱. معرفی منابع برای پیدا کردن پلاگین‌ها
 buildscript {
     repositories {
         google()
@@ -9,13 +10,7 @@ buildscript {
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
+// ۲. اعمال پلاگین‌ها
 apply plugin: 'com.android.application'
 apply plugin: 'org.jetbrains.kotlin.android'
 
@@ -47,6 +42,12 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
+}
+
+// ۳. معرفی منابع برای کتابخانه‌ها و خودِ کتابخانه‌ها
+repositories {
+    google()
+    mavenCentral()
 }
 
 dependencies {
