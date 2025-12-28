@@ -1,1 +1,2 @@
-rootProject.name = "PhotoEditor"
+include ':app'
+rootProject.name = "MyPhotoEditor"
